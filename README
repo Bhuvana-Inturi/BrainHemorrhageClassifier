@@ -1,0 +1,47 @@
+Brain Hemorrhage Classifier
+Overview
+This project aims to classify brain hemorrhage types (Epidural, Intracranial, Intraparenchymal, Subarachnoid, and Subdural) using CT images. The system includes image preprocessing, a pre-trained deep learning model, and a web interface for user interaction.
+Requirements
+•	Python
+•	Flask
+•	NumPy
+•	TensorFlow/Keras
+•	OpenCV (for potential image preprocessing steps)
+Installation
+1.	Clone the repository:
+Bash
+git clone https://github.com/your-username/BrainHemorrhageClassifier.git
+Use code with caution.
+2.	Install required packages:
+Bash
+pip install -r requirements.txt
+Use code with caution.
+3.	Download and place the pre-trained model (model.h5) in the project directory.
+Usage
+1.	Run the Python script:
+Bash
+python app.py
+Use code with caution.
+2.	Access the web application in your browser (usually at http://localhost:5000).
+3.	Upload a CT image.
+4.	The application will process the image and display the predicted brain hemorrhage type.
+Directory Structure
+•	static: Contains static files like CSS, JavaScript, and images.
+•	templates: Contains HTML templates for the web interface.
+•	model.h5: The pre-trained deep learning model.
+•	app.py: The main Python script for the web application.
+Model
+The project utilizes a pre-trained deep learning model (likely a CNN) to classify brain hemorrhage types. The model is loaded from the model.h5 file.
+Image Preprocessing
+The code includes basic image preprocessing steps like resizing and normalization. Additional preprocessing techniques (e.g., image augmentation, feature extraction) can be incorporated for improved performance.
+Web Interface
+The Flask framework provides a simple web interface for users to upload CT images and view prediction results.
+Limitations
+•	The accuracy of the model depends on the quality of the training data and the chosen architecture.
+•	The current implementation provides basic image preprocessing. More advanced techniques might be required for optimal results.
+Future Work
+•	Explore different deep learning architectures (e.g., ResNet, Inception, EfficientNet).
+•	Incorporate advanced image preprocessing techniques.
+•	Develop a mobile app for user convenience.
+•	Integrate with medical imaging systems for direct image upload and results.
+
